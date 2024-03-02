@@ -1,9 +1,9 @@
 # EXPERIMENT-NO--03-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resistor
 
-# DATE :
-# NAME :
-# ROLLNUMBER :
-# DEPARTMENT
+# DATE :02-03-2024
+# NAME :ETTA SUPRAJA
+# ROLLNUMBER :212223220022
+# DEPARTMENT:INFORMATION TECHNOLOGY
 ## AIM: 
 To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
  
@@ -62,7 +62,9 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
+![Screenshot 2024-03-02 143339](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/7a55b083-7d61-43ed-8be7-04f29e3f3330)
 
+![Screenshot 2024-03-02 143427](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/3d8790c0-4b38-40fe-8c8a-b590a227d18a)
 
 
 ### PROCEDURE:
@@ -79,26 +81,44 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+ *your roll no :212223220022
+ * your name :ETTA SUPRAJA
+ * department and year: B.TECH IT,1ST YEAR
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ int fsr;
+int LED= 7;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+}
 
-![image](https://user-images.githubusercontent.com/36288975/188804653-a3154e8e-2655-46f2-9dcd-f425dd1ba109.png)
+void loop()
+{
+  fsr= analogRead(A0);
+  Serial.print("raw values=");
+  Serial.println(fsr);
+  delay(1000);
+  int m;
+  m = map(fsr, 0,159,0,10);
+   Serial.print("mapped values=");
+  Serial.println(m);
+  delay(1000);
+  
+  
+  
+  if(m>5);
+  {
+    digitalWrite (LED, HIGH);
+       delay(500);
+    digitalWrite (LED,LOW);
+       delay(500);
+  }
+}
+
+ 
+![WhatsApp Image 2024-03-02 at 14 39 27_0a7aabe0](https://github.com/vasanthkumarch/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/28b2aa19-b508-46ec-8669-32f219325ba2)
+
 
 
 ### TABLE -02 standard deviation table 
@@ -117,18 +137,6 @@ For those unfamiliar with summation notation, the equation above may seem daunti
 EX:           μ = (1+3+4+7+8) / 5 = 4.6        
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
