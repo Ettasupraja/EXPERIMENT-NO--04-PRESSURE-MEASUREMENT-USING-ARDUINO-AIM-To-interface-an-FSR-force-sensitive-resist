@@ -59,10 +59,10 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### FIGURE-03 CIRCUIT DIAGRAM
-![Screenshot 2024-03-02 143339](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/9a7c57a4-7cb7-4369-ae1f-9bb06536e2ec)
 
-![Screenshot 2024-03-02 143427](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/030de088-68e6-49e6-b2dd-bf5f42fe55ab)
+![Screenshot 2024-03-02 143339](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/03defaa1-7e40-48fb-bcd0-b56d469b4c63)
 
+![Screenshot 2024-03-02 143427](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/57098cfe-a707-4dbf-87a0-dd0e17b5526d)
 
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
@@ -82,7 +82,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
  * your name :ETTA SUPRAJA
  * department and year:B.TECH IT, 1st Year 
  
- int fsr;
+int fsr;
 int LED= 7;
 void setup()
 {
@@ -112,10 +112,11 @@ void loop()
        delay(500);
   }
 }
- 
 
 
-![WhatsApp Image 2024-03-02 at 14 39 27_62d59ae1](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/d4e60022-9c0f-47c8-99ea-9a7868e14b59)
+
+
+![Screenshot 2024-03-02 212250](https://github.com/Ettasupraja/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/assets/151641352/fd7996d8-cfb4-433f-b0d4-462176f722f6)
 
 
 ### TABLE -02 standard deviation table 
